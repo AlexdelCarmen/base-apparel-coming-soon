@@ -29,13 +29,14 @@ body {
   min-height: 100vh;
   font-family: var(--font);
   background-color: #fff;
-  font-size: var(--para-size);  
+  font-size: var(--para-size);
 }
 
 .coming-soon-component {
   max-width: var(--mobile-width);
-  background-image: url(./images/bg-pattern-desktop.svg),linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%)),
-  linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-image: url(./images/bg-pattern-desktop.svg),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+    linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: cover, contain, contain;
   padding: 0;
@@ -43,7 +44,7 @@ body {
 }
 
 .hero-mobile,
-.hero-desktop, 
+.hero-desktop,
 .logo {
   max-width: 100%;
   object-fit: cover;
@@ -54,7 +55,8 @@ body {
   max-width: 30%;
 }
 
-.logo, .hero-mobile {
+.logo,
+.hero-mobile {
   display: block;
 }
 
@@ -86,7 +88,7 @@ body {
   line-height: 24px;
 }
 
-.component-form{
+.component-form {
   display: flex;
   position: relative;
   justify-content: center;
@@ -99,7 +101,7 @@ body {
 }
 
 .email {
-  width: 90%;
+  width: 100%;
   background-color: transparent;
   border-radius: 30px;
   padding: 10px;
@@ -115,7 +117,7 @@ body {
   outline: none;
 }
 
-.email::placeholder{
+.email::placeholder {
   color: var(--accent1);
 }
 
@@ -129,7 +131,7 @@ input {
 
 button {
   width: 15%;
-  background:   linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   outline: none;
   border: none;
   border-radius: 30px;
@@ -138,9 +140,31 @@ button {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 70%;
+  left: 80%;
   box-shadow: 1px 1px 10px 1px var(--accent1);
+  transition: transform 0.1s ease-in-out;
 }
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scaleX(110%);
+}
+
+.error-icon {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+.error-message{
+  color: var(--accent2);
+  font-size: 12px;
+  text-align: left;
+  width: 72%;
+  font-weight: var(--semi-bold);
+}
+
 
 .attribution {
   font-size: 11px;

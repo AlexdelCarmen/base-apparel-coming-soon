@@ -1,18 +1,24 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --mobile-width: 375px; 
+  --mobile-width: 375px;
   --desktop-width: 1440px;
   --accent1: hsl(0, 36%, 70%);
-  --accent2: hsl(0, 93%, 68%); 
-  --neutral1: hsl(0, 6%, 24%); 
-  --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); 
+  --accent2: hsl(0, 93%, 68%);
+  --neutral1: hsl(0, 6%, 24%);
+  --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  font-family: 'Josefin Sans', sans-serif;
+  --font: "Josefin Sans", sans-serif;
+  --light-weight: 300;
+  --normal-weight: 400;
+  --semi-bold: 600;
+  --para-size: 16px;
 }
 
 body {
@@ -21,6 +27,119 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: var(--font);
+  background-color: #fff;
+  font-size: var(--para-size);  
+}
+
+.coming-soon-component {
+  max-width: var(--mobile-width);
+  background-image: url(./images/bg-pattern-desktop.svg),linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%)),
+  linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover, contain, contain;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-mobile,
+.hero-desktop, 
+.logo {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  margin: 2rem;
+  max-width: 30%;
+}
+
+.logo, .hero-mobile {
+  display: block;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+.component-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--neutral1);
+  font-weight: var(--semi-bold);
+  padding: 0 4rem;
+  letter-spacing: 8px;
+  margin: 2rem 0;
+  font-size: 32px;
+}
+
+.thin {
+  font-weight: var(--light-weight);
+  color: var(--accent1);
+}
+
+.component-message {
+  text-align: center;
+  font-weight: var(--normal-weight);
+  color: var(--accent1);
+  padding: 0 1rem;
+  line-height: 24px;
+}
+
+.component-form{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.error-message {
+  position: absolute;
+  top: 70%;
+}
+
+.email {
+  width: 90%;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+  color: var(--accent1);
+  border: 1px solid var(--accent1);
+}
+
+.error {
+  border: 3px solid var(--accent2);
+}
+
+.email:focus {
+  outline: none;
+}
+
+.email::placeholder{
+  color: var(--accent1);
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+button {
+  width: 15%;
+  background:   linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 70%;
+  box-shadow: 1px 1px 10px 1px var(--accent1);
 }
 
 .attribution {
@@ -30,4 +149,3 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-

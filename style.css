@@ -111,6 +111,7 @@ body {
 
 .error {
   border: 3px solid var(--accent2);
+  color: var(--accent2);
 }
 
 .email:focus {
@@ -151,6 +152,10 @@ button:hover {
   transform: scaleX(110%);
 }
 
+button:active {
+  transform: scaleX(95%);
+}
+
 .error-icon {
   position: absolute;
   top: 40%;
@@ -165,6 +170,9 @@ button:hover {
   font-weight: var(--semi-bold);
 }
 
+.hidden {
+  display: none;
+}
 
 .attribution {
   font-size: 11px;

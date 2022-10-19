@@ -34,12 +34,12 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/AlexdelCarmen/four-card-feature-section)
-- Live Site URL: [Live site](https://alexdelcarmen.github.io/four-card-feature-section/)
+- Solution URL: [Solution](https://github.com/AlexdelCarmen/base-apparel-coming-soon)
+- Live Site URL: [Live site](https://alexdelcarmen.github.io/base-apparel-coming-soon/)
 
 ## My process
 
-As usual, I created the HTML structure first, next I added some custom CSS styles, then proceeded to style the mobile layout for the website.  I ended with making a simple media query to support desktop layouts.  
+As usual, I created the HTML structure first, next I added some custom CSS styles, then proceeded to style the mobile layout for the website. I continued by coding the script to trigger the error messages. I ended with making a simple media query to support desktop layouts.  
 ### Built with
 
 - Semantic HTML5 markup
@@ -50,29 +50,19 @@ As usual, I created the HTML structure first, next I added some custom CSS style
 
 ### What I learned
 
-Kept using what I learned back in the article preview challenge and Lucas' tips to make sure the layout was looking good.  
+Kept applying the responsive website tricks I have learned so far: 
 
 ```css
 
 body {
-  padding: 0;
-  margin: 0;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--light1);
-  font-family: var(--main-font);
+  min-height: 100vh;
+  font-family: var(--font);
+  background-color: #fff;
   font-size: var(--para-size);
-  color: var(--dark2);
-}
-
-.card-img {
-    display: block;
-    object-fit: cover;
-    max-width: 100%;
-    align-self: flex-end;
 }
 
 ```
@@ -92,4 +82,4 @@ Still got to practice more my responsive layouts.
 
 ## Acknowledgments
 
-To [Lucas](https://www.frontendmentor.io/profile/correlucas), thanks for the great tips.  
+To mom, I'll get you out one day.  

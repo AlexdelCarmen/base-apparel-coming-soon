@@ -179,7 +179,7 @@ button:active {
   color: hsl(228, 45%, 44%);
 }
 
-@media  screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
   .coming-soon-component {
     max-width: var(--desktop-width);
     padding-left: 5rem;
@@ -198,7 +198,8 @@ button:active {
     justify-content: center;
   }
 
-  .component-message, .component-title {
+  .component-message,
+  .component-title {
     text-align: left;
   }
 

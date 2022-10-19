@@ -98,6 +98,11 @@ body {
 .error-message {
   position: absolute;
   top: 70%;
+  color: var(--accent2);
+  font-size: 12px;
+  text-align: left;
+  width: 72%;
+  font-weight: var(--semi-bold);
 }
 
 .email {
@@ -162,14 +167,6 @@ button:active {
   left: 70%;
 }
 
-.error-message{
-  color: var(--accent2);
-  font-size: 12px;
-  text-align: left;
-  width: 72%;
-  font-weight: var(--semi-bold);
-}
-
 .hidden {
   display: none;
 }
@@ -180,4 +177,60 @@ button:active {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media  screen and (min-width: 1440px){
+  .coming-soon-component {
+    max-width: var(--desktop-width);
+    padding-left: 5rem;
+  }
+  .hero-desktop {
+    display: block;
+    margin-top: -10%;
+  }
+
+  .hero-mobile {
+    display: none;
+  }
+  .component-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .component-message, .component-title {
+    text-align: left;
+  }
+
+  .component-title {
+    padding-left: inherit;
+    margin-left: 1rem;
+    padding-right: 25rem;
+    font-size: 64px;
+  }
+
+  .component-message {
+    padding-right: 20rem;
+  }
+
+  .email {
+    width: 50%;
+    margin-left: -57%;
+    padding: 15px;
+  }
+  .error-message {
+    position: absolute;
+    top: 75%;
+    left: 4%;
+  }
+  .error-icon {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+  }
+  button {
+    left: 40%;
+    width: 10%;
+    height: 38%;
+  }
 }
